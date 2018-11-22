@@ -1,129 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Branimir's Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/styles.css">
 <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-    html {
-        scroll-behavior: smooth;
-    }
-
-
-    body {
-        font-family: Arial;
-        margin: 0;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    img {
-        vertical-align: middle;
-    }
-
-    img.slide {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-        position: relative;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-        cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 300px;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-        text-align: center;
-        background-color: #222;
-        padding: 2px 16px;
-        color: white;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Six columns side by side */
-    .column {
-        float: left;
-        width: 16.66%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-        opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-        opacity: 1;
-    }
-
-
-    .center{
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -176,37 +60,41 @@
     <!-- Sliding show -->
     <div class="container w3-bottombar" >
         <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img class="slide" src="images/platformer.png" height="600" width=auto >
+            <div class="numbertext">1 / 5</div>
+            <!--<img class="slide" src="images/platformer.png" height="600" width=auto >-->
+
+            <iframe class="videoslide" height="600" width="950" src="https://www.youtube.com/embed/nOilVNWSxBw?autoplay=0?controls=1"></iframe>
         </div>
 
+        <!-- make sure you change the current slide index as well!
         <div class="mySlides">
             <div class="numbertext">2 / 6</div>
             <img class="slide" src="images/desktop.png" height="600" width=auto>
         </div>
+        -->
 
         <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
+            <div class="numbertext">2 / 5</div>
             <img class="slide" src="images/spaceinvader.png" height="600" width=auto>
         </div>
 
         <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
+            <div class="numbertext">3 / 5</div>
             <img class="slide" src="images/vmp.png" height="600" width=auto>
         </div>
 
         <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
+            <div class="numbertext">4 / 5</div>
             <img class="slide" src="images/test.png" height="600" width=auto>
         </div>
 
         <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
+            <div class="numbertext">5 / 5</div>
             <img class="slide" src="images/test.png" height="600" width=auto>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="prev" onclick="plusSlides(-1); stopVideo()">❮</a>
+        <a class="next" onclick="plusSlides(1); stopVideo()">❯</a>
 
         <div class="caption-container">
             <p id="caption"></p>
@@ -216,20 +104,22 @@
             <div class="column">
                 <img class="demo cursor" src="images/platformer.png" style="width:100%" onclick="currentSlide(1)" alt="Bunner is a 2D platformer made in my 2D platformer template/engine">
             </div>
+            <!-- make sure you change the current slide index as well!
             <div class="column">
                 <img class="demo cursor" src="images/desktop.png" style="width:100%" onclick="currentSlide(2)" alt="This was my first attemp at digital drawing using a mouse.">
             </div>
+            -->
             <div class="column">
-                <img class="demo cursor" src="images/spaceinvader.png" style="width:100%" onclick="currentSlide(3)" alt="A space invader copy made in C# and SFML API.">
+                <img class="demo cursor" src="images/spaceinvader.png" style="width:100%" onclick="currentSlide(2)" alt="A space invader copy made in C# and SFML API.">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/vmp.png" style="width:100%" onclick="currentSlide(4)" alt="Visuam Media Player">
+                <img class="demo cursor" src="images/vmp.png" style="width:100%" onclick="currentSlide(3)" alt="Visuam Media Player">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/test.png" style="width:100%" onclick="currentSlide(4)" alt="Placeholder">
             </div>
             <div class="column">
                 <img class="demo cursor" src="images/test.png" style="width:100%" onclick="currentSlide(5)" alt="Placeholder">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="images/test.png" style="width:100%" onclick="currentSlide(6)" alt="Placeholder">
             </div>
         </div>
     </div>
@@ -249,20 +139,43 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
+            var videoslides = document.getElementsByClassName("videoslide");
             var dots = document.getElementsByClassName("demo");
             var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            captionText.innerHTML = dots[slideIndex-1].alt;
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
         }
+
+        $('a.next').click(function(){
+            $('.videoslide')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        });
+
+        var stopVideo = function ( element ) {
+            var iframe = element.querySelector( 'iframe');
+            var video = element.querySelector( 'video' );
+            if ( iframe ) {
+                var iframeSrc = iframe.src;
+                iframe.src = iframeSrc;
+            }
+            if ( video ) {
+                video.pause();
+            }
+        };
+
     </script>
 
 
