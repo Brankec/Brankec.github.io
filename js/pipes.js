@@ -33,9 +33,9 @@ var pipeFourState = {
   height: (canvasHeight)
 }
 
-pipeOneState.height = randomNumber(50, 500)
+pipeOneState.height = randomNumber(50, 400)
 pipeTwoState.y = pipeOneState.height + randomNumber(120, 150)
-pipeThreeState.height = randomNumber(50, 500)
+pipeThreeState.height = randomNumber(50, 400)
 pipeFourState.y = pipeThreeState.height + randomNumber(120, 150)
 
 function updatePipes(progress) {

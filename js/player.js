@@ -3,6 +3,8 @@ var ctx = canvas.getContext("2d")
 var gravity = 0.5
 var hasJumped = false
 var velocityY = 0
+var flappyjump = new Audio('./res/flappyjump.wav');
+var flappyhit = new Audio('./res/flappyhit.wav');
 
 var playerState = {
   x: (canvasWidth / 10),
@@ -26,6 +28,7 @@ function checkForCollision(){
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeThreeState.x, pipeThreeState.y, pipeThreeState.width, pipeThreeState.height) ||
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeFourState.x, pipeFourState.y, pipeFourState.width, pipeFourState.height) ||
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, floorState.x, floorState.y, floorState.width, floorState.height)){
+    flappyhit.play()
     return true
   }
   else {
@@ -50,6 +53,7 @@ function updatePlayer(progress) {
   velocityY += gravity
   if(playerState.pressedKeys.up && !hasJumped) {
     velocityY = -10
+    flappyjump.play();
     hasJumped = true
   }
   //if(playerState.pressedKeys.down) {
