@@ -15,9 +15,14 @@ window.onresize = resize
 resize()
 
 function update(progress) {
-  updatePipes(progress)
-  updateFloor()
-  updatePlayer(progress)
+  if(!gameOver) {
+    updatePipes(progress)
+    updateFloor()
+    updatePlayer(progress)
+  }
+  else{
+    updateGameOver()
+  }
 }
 
 function draw() {
@@ -38,9 +43,7 @@ function loop(timestamp) {
   draw()
 
   lastRender = timestamp
-  if(!gameOver) {
-    window.requestAnimationFrame(loop)
-  }
+  window.requestAnimationFrame(loop)
 }
 var lastRender = 0
 window.requestAnimationFrame(loop)

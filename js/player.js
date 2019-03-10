@@ -5,6 +5,7 @@ var hasJumped = false
 var velocityY = 0
 var flappyjump = new Audio('./res/flappyjump.wav');
 var flappyhit = new Audio('./res/flappyhit.wav');
+var flappyfall = new Audio('./res/flappyfall.wav');
 
 var playerState = {
   x: (canvasWidth / 10),
@@ -29,6 +30,11 @@ function checkForCollision(){
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeFourState.x, pipeFourState.y, pipeFourState.width, pipeFourState.height) ||
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, floorState.x, floorState.y, floorState.width, floorState.height)){
     flappyhit.play()
+
+    flappyhit.addEventListener('ended', function() {
+      flappyfall.play()
+      fall = true
+    }, false);
     return true
   }
   else {
