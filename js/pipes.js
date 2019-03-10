@@ -33,20 +33,25 @@ var pipeFourState = {
   height: (canvasHeight)
 }
 
+pipeOneState.height = randomNumber(50, 500)
+pipeTwoState.y = pipeOneState.height + randomNumber(120, 150)
+pipeThreeState.height = randomNumber(50, 500)
+pipeFourState.y = pipeThreeState.height + randomNumber(120, 150)
+
 function updatePipes(progress) {
   if(pipeOneState.x <= 0 || pipeTwoState.x <= 0){
     pipeOneState.x = 1920
     pipeTwoState.x = 1920
 
     pipeOneState.height = randomNumber(50, 500)
-    pipeTwoState.y = pipeOneState.height + randomNumber(100, 120)
+    pipeTwoState.y = pipeOneState.height + randomNumber(120, 150)
   }
   if(pipeThreeState.x <= 0 || pipeFourState.x <= 0){
     pipeThreeState.x = 1920
     pipeFourState.x = 1920
 
     pipeThreeState.height = randomNumber(50, 500)
-    pipeFourState.y = pipeThreeState.height + randomNumber(100, 120)
+    pipeFourState.y = pipeThreeState.height + randomNumber(120, 150)
   }
 
   pipeOneState.x -= progress + speed
@@ -57,8 +62,8 @@ function updatePipes(progress) {
 
 function drawPipes() {
   ctx.fillStyle = 'green'
-  ctx.fillRect(pipeOneState.x - 10, pipeOneState.y - 10, pipeOneState.width, pipeOneState.height)
-  ctx.fillRect(pipeTwoState.x - 10, pipeTwoState.y - 10, pipeTwoState.width, pipeTwoState.height)
-  ctx.fillRect(pipeThreeState.x - 10, pipeThreeState.y - 10, pipeThreeState.width, pipeThreeState.height)
-  ctx.fillRect(pipeFourState.x - 10, pipeFourState.y - 10, pipeFourState.width, pipeFourState.height)
+  ctx.fillRect(pipeOneState.x, pipeOneState.y, pipeOneState.width, pipeOneState.height)
+  ctx.fillRect(pipeTwoState.x, pipeTwoState.y , pipeTwoState.width, pipeTwoState.height)
+  ctx.fillRect(pipeThreeState.x, pipeThreeState.y, pipeThreeState.width, pipeThreeState.height)
+  ctx.fillRect(pipeFourState.x, pipeFourState.y, pipeFourState.width, pipeFourState.height)
 }

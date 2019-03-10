@@ -24,7 +24,8 @@ function checkForCollision(){
   if(isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeOneState.x, pipeOneState.y, pipeOneState.width, pipeOneState.height) ||
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeTwoState.x, pipeTwoState.y, pipeTwoState.width, pipeTwoState.height) ||
      isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeThreeState.x, pipeThreeState.y, pipeThreeState.width, pipeThreeState.height) ||
-     isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeFourState.x, pipeFourState.y, pipeFourState.width, pipeFourState.height)){
+     isCollision(playerState.x, playerState.y, playerState.width, playerState.height, pipeFourState.x, pipeFourState.y, pipeFourState.width, pipeFourState.height) ||
+     isCollision(playerState.x, playerState.y, playerState.width, playerState.height, floorState.x, floorState.y, floorState.width, floorState.height)){
     return true
   }
   else {

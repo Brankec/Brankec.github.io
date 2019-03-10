@@ -15,12 +15,14 @@ window.onresize = resize
 resize()
 
 function update(progress) {
-  updatePlayer(progress)
   updatePipes(progress)
+  updateFloor()
+  updatePlayer(progress)
 }
 
 function draw() {
   drawPipes()
+  drawFloor()
   drawPlayer()
 }
 
