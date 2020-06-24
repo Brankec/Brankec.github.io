@@ -345,7 +345,7 @@ iframe {
 .login100-form-btn {
   font-family: Ubuntu-Bold;
   font-size: 16px;
-  color: #721c24;
+  color: Red;
   line-height: 1.2;
   text-transform: uppercase;
 
@@ -375,7 +375,8 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background-color: #403866;
+  background-color: Red;
+  color: black;
 }
 
 
