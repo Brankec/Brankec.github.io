@@ -9,12 +9,20 @@
 
     $('.validate-form').on('submit',function(){
         var check = true;
+        let isAllValid = [false, false];
 
         for(var i=0; i<input.length; i++) {
             if(validate(input[i]) == false){
                 showValidate(input[i]);
                 check=false;
             }
+            else {
+              isAllValid[i] = true;
+            }
+        }
+
+        if (isAllValid.every(Boolean)) {
+            window.open("mainmenu.html")
         }
 
         return check;
