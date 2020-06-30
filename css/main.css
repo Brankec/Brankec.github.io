@@ -57,7 +57,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Ubuntu-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -135,9 +134,8 @@ iframe {
   margin: 0 auto;
 }
 
-.container-login100 {
+.container-master {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
