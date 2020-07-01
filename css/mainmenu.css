@@ -1,12 +1,11 @@
 .lecture-list-container {
-  height: 400px;
+  height: 100%;
   overflow-x:auto;
 }
 
 ul{
   width:100%;
   margin-bottom:20px;
-  overflow:hidden;
 }
 li{
   line-height:1.5em;
