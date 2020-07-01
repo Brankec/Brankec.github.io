@@ -22,7 +22,8 @@
         }
 
         if (isAllValid.every(Boolean)) {
-            window.open("mainmenu.html")
+            location.href = 'mainmenu.html';
+            return false;
         }
 
         return check;
