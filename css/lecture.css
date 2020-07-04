@@ -1,0 +1,151 @@
+.lecture-list-container {
+  height: 58%;
+  overflow-x:auto;
+}
+
+.mainmenu100-form-btn {
+  font-family: Ubuntu-Bold;
+  font-size: 16px;
+  color: Red;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin: 15px;
+  box-shadow: 5px 5px 8px #888888;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainmenu100-form-btn:hover {
+  background-color: Red;
+  color: black;
+}
+
+.mainmenu100-lecture-btn {
+  font-family: Ubuntu-Bold;
+  font-size: 16px;
+  color: Black;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 80%;
+  height: 90px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin: 15px;
+  box-shadow: 5px 5px 8px #888888;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainmenu100-form-title {
+  font-family: Arial;
+  font-size: 40px;
+  color: Black;
+  line-height: 1.2;
+  text-align: left;
+  alignment: top;
+
+  width: 100%;
+  display: block;
+}
+
+.mainmenu100-btn-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  align-content: center;
+  color: Black;
+}
+
+.mainmenu100-btn-image-div {
+  display: inline-block;
+  width: 50%;
+}
+
+.mainmenu100-btn-image {
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mainmenu100-btn-title-div {
+  display: inline-block;
+  width: 40%;
+}
+
+.mainmenu100-favorites-btn {
+  font-family: Ubuntu-Bold;
+  font-size: 16px;
+  color: Red;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 62px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 5px 5px 8px #888888;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.container-mainmenu100-favorites-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-bottom: 20px;
+}
+
