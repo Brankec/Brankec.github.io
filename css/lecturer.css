@@ -1,0 +1,59 @@
+.lecturer100-btn-lecturer-info-div {
+  display: inline-block;
+  width: 50%;
+  vertical-align: bottom;
+}
+
+.lecturer100-btn-lecturer-image-div {
+  display: inline-block;
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+}
+
+.lecturer100-info-image {
+  align-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.lecturer100-cv-title {
+  font-family: Arial;
+  font-size: 30px;
+  color: Black;
+  line-height: 1.2;
+  text-align: center;
+  alignment: center;
+
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  height: 5%;
+}
+
+.lecturer100-cv-body {
+  font-family: Arial;
+  font-size: 30px;
+  color: Black;
+  line-height: 1.2;
+  text-align: center;
+  alignment: center;
+
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  height: 30%;
+  max-height: 30%;
+
+}
+.lecturer100-cv-text {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lecture100-back-btn:hover {
+  background-color: Red;
+  color: black;
+  bottom:0px;
+}
